@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+// Usage : AppLocalizations.of(context).translate('app_name')
+
 class AppLocalizations {
   final Locale locale;
 

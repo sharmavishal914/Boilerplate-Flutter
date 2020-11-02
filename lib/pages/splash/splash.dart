@@ -1,31 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutterboilerplate/app/app_localizations.dart';
+import 'package:flutterboilerplate/common/constants/constants.dart';
 
 class SplashPage extends StatefulWidget {
   @override
   _SplashPageState createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-
+class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(vsync: this);
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushNamed(context, "/Login");
+    });
   }
 
   @override
   void dispose() {
     super.dispose();
-    _controller.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(AppLocalizations.of(context).translate('app_name')),
+        child: Image.asset(ImageConstant.IMAGE_APP_ICON),
       ),
     );
   }

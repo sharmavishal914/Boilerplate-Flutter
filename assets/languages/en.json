@@ -1,3 +1,5 @@
 {
-  "app_name": "Flutter"
+  "app_name": "Flutter",
+  "login": "Login",
+  "password": "Password"
 }
