@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterboilerplate/common/constants/color_constant.dart';
 
 // Usage
 
@@ -24,10 +25,10 @@ class InputWidget extends StatelessWidget {
       decoration: InputDecoration(
         labelText: hint,
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
+          borderSide: BorderSide(color: ColorConstant.INPUT_BORDER_COLOR),
         ),
         focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.blue),
+          borderSide: BorderSide(color: ColorConstant.INPUT_SELECTED_BORDER_COLOR),
         ),
         border: UnderlineInputBorder(),
       ),

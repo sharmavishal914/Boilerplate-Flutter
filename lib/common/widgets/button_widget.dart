@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterboilerplate/common/constants/color_constant.dart';
 
 //  Usage
 
@@ -24,8 +25,10 @@ class ButtonWidget extends StatelessWidget {
     return MaterialButton(
       minWidth: width ?? double.infinity,
       padding: const EdgeInsets.all(10),
-      textColor: Colors.white,
-      color: Colors.blue,
+      textColor: ColorConstant.BUTTON_ENABLED_TEXT_COLOR,
+      disabledTextColor: ColorConstant.BUTTON_DISABLED_TEXT_COLOR,
+      color: ColorConstant.BUTTON_ENABLED_COLOR,
+      disabledColor: ColorConstant.BUTTON_DISABLED_COLOR,
       onPressed: onPress,
       child: Text(title),
     );
